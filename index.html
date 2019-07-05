@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-07-05 Fri 10:05 -->
+<!-- 2019-07-05 Fri 11:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SICP-Notes</title>
@@ -270,21 +270,21 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org12f49f3">1. Building Abstractions With Procedures</a>
+<li><a href="#orgd268df3">1. Building Abstractions With Procedures</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org9e06a41">1.0.1. Why Lisp</a></li>
+<li><a href="#org0d25639">1.0.1. Why Lisp</a></li>
 </ul>
 </li>
-<li><a href="#org1366c29">1.1. The Elements of Programming</a>
+<li><a href="#org93e8e78">1.1. The Elements of Programming</a>
 <ul>
-<li><a href="#orgddb4bb7">1.1.1. Expressions</a></li>
-<li><a href="#org88e1770">1.1.2. Naming and Environment</a></li>
-<li><a href="#org304f996">1.1.3. Evaluating Combinations</a></li>
-<li><a href="#orgc887282">1.1.4. Compound Procedures</a></li>
-<li><a href="#orgf55fea8">1.1.5. The Substitution Model for Procedure Application</a></li>
-<li><a href="#orgf3f1cf0">1.1.6. Conditional Expressions and Predicates</a></li>
+<li><a href="#orgc9b19cb">1.1.1. Expressions</a></li>
+<li><a href="#orgc397d99">1.1.2. Naming and Environment</a></li>
+<li><a href="#org7ce6a28">1.1.3. Evaluating Combinations</a></li>
+<li><a href="#org2708ef2">1.1.4. Compound Procedures</a></li>
+<li><a href="#orgdacb812">1.1.5. The Substitution Model for Procedure Application</a></li>
+<li><a href="#org9059319">1.1.6. Conditional Expressions and Predicates</a></li>
 </ul>
 </li>
 </ul>
@@ -294,16 +294,16 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org12f49f3" class="outline-2">
-<h2 id="org12f49f3"><span class="section-number-2">1</span> Building Abstractions With Procedures</h2>
+<div id="outline-container-orgd268df3" class="outline-2">
+<h2 id="orgd268df3"><span class="section-number-2">1</span> Building Abstractions With Procedures</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 A computational process, in a correctly working computer, executes programs precisely and accurately. 
 </p>
 </div>
 
-<div id="outline-container-org9e06a41" class="outline-4">
-<h4 id="org9e06a41"><span class="section-number-4">1.0.1</span> Why Lisp</h4>
+<div id="outline-container-org0d25639" class="outline-4">
+<h4 id="org0d25639"><span class="section-number-4">1.0.1</span> Why Lisp</h4>
 <div class="outline-text-4" id="text-1-0-1">
 <ul class="org-ul">
 <li>Lisp descriptions of processes, called procedures, can themselves be represented and manipulated as Lisp data.</li>
@@ -313,8 +313,8 @@ A computational process, in a correctly working computer, executes programs prec
 </div>
 </div>
 
-<div id="outline-container-org1366c29" class="outline-3">
-<h3 id="org1366c29"><span class="section-number-3">1.1</span> The Elements of Programming</h3>
+<div id="outline-container-org93e8e78" class="outline-3">
+<h3 id="org93e8e78"><span class="section-number-3">1.1</span> The Elements of Programming</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The language serves as a framework within which we organize our ideas about processes. Languages have three mechanisms by which they express this:
@@ -334,8 +334,8 @@ In programming, we deal with two kinds of elements: procedures and data.
 </ul>
 </div>
 
-<div id="outline-container-orgddb4bb7" class="outline-4">
-<h4 id="orgddb4bb7"><span class="section-number-4">1.1.1</span> Expressions</h4>
+<div id="outline-container-orgc9b19cb" class="outline-4">
+<h4 id="orgc9b19cb"><span class="section-number-4">1.1.1</span> Expressions</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li>Expressions can be as simple as a number.</li>
@@ -377,8 +377,8 @@ In programming, we deal with two kinds of elements: procedures and data.
 </div>
 </div>
 
-<div id="outline-container-org88e1770" class="outline-4">
-<h4 id="org88e1770"><span class="section-number-4">1.1.2</span> Naming and Environment</h4>
+<div id="outline-container-orgc397d99" class="outline-4">
+<h4 id="orgc397d99"><span class="section-number-4">1.1.2</span> Naming and Environment</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 Define is our language’s simplest means of abstraction, for it allows us to use simple names to refer to the results of compound operations.
@@ -390,8 +390,8 @@ It should be clear that the possibility of associating values with symbols and l
 </div>
 </div>
 
-<div id="outline-container-org304f996" class="outline-4">
-<h4 id="org304f996"><span class="section-number-4">1.1.3</span> Evaluating Combinations</h4>
+<div id="outline-container-org7ce6a28" class="outline-4">
+<h4 id="org7ce6a28"><span class="section-number-4">1.1.3</span> Evaluating Combinations</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 To evaluate a combination, do the following:
@@ -448,8 +448,8 @@ The evaluation rule for expressions can be described by a simple general rule to
 </div>
 </div>
 
-<div id="outline-container-orgc887282" class="outline-4">
-<h4 id="orgc887282"><span class="section-number-4">1.1.4</span> Compound Procedures</h4>
+<div id="outline-container-org2708ef2" class="outline-4">
+<h4 id="org2708ef2"><span class="section-number-4">1.1.4</span> Compound Procedures</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <p>
 <b>Procedure</b> definitions are  a much more powerful abstraction technique by which a compound operation can be given a name and then referred to as a unit. 
@@ -490,6 +490,11 @@ We can also now use square inside of definitions of other procedures.
 </pre>
 </div>
 
+<pre class="example">
+25
+</pre>
+
+
 <p>
 Of course, now we can use <code>sum-of-squares</code> as a building block for constructing furthur procedures.
 </p>
@@ -513,12 +518,12 @@ Compound procedures are used in exactly the same way as primitive procedures. In
 </div>
 </div>
 
-<div id="outline-container-orgf55fea8" class="outline-4">
-<h4 id="orgf55fea8"><span class="section-number-4">1.1.5</span> The Substitution Model for Procedure Application</h4>
+<div id="outline-container-orgdacb812" class="outline-4">
+<h4 id="orgdacb812"><span class="section-number-4">1.1.5</span> The Substitution Model for Procedure Application</h4>
 <div class="outline-text-4" id="text-1-1-5">
 </div>
 <ol class="org-ol">
-<li><a id="org158ef99"></a>Applicative Order Evaluation<br />
+<li><a id="orgaaa4bef"></a>Applicative Order Evaluation<br />
 <div class="outline-text-5" id="text-1-1-5-1">
 <p>
 To apply a compound procedure to arguments, evaluate the body of the procedure with each formal parameter replaced by the corresponding argument. 
@@ -582,7 +587,7 @@ and finally to:
 </div>
 </li>
 
-<li><a id="org837458c"></a>Normal Order Evaluation<br />
+<li><a id="org9495044"></a>Normal Order Evaluation<br />
 <div class="outline-text-5" id="text-1-1-5-2">
 <p>
 This is not the only way to perform evaluation. An alternative evaluation model would not evaluate the operands until their values were needed. Instead it would first substitute operand expressions for parameters until it obtained an expression involving only primitive operators, and would then perform the evaluation. 
@@ -629,8 +634,8 @@ Lisp uses applicative order, note having to evaluate the same expression twice i
 </ol>
 </div>
 
-<div id="outline-container-orgf3f1cf0" class="outline-4">
-<h4 id="orgf3f1cf0"><span class="section-number-4">1.1.6</span> Conditional Expressions and Predicates</h4>
+<div id="outline-container-org9059319" class="outline-4">
+<h4 id="org9059319"><span class="section-number-4">1.1.6</span> Conditional Expressions and Predicates</h4>
 <div class="outline-text-4" id="text-1-1-6">
 <p>
 \(|x| = \begin{cases}
@@ -659,7 +664,7 @@ This construct is called a case analysis, and there is a special form in Lisp fo
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Julian Herrera</p>
-<p class="date">Created: 2019-07-05 Fri 10:05</p>
+<p class="date">Created: 2019-07-05 Fri 11:00</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

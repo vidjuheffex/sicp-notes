@@ -156,7 +156,7 @@ Having defined ~square~ we can now use it:
 
 We can also now use square inside of definitions of other procedures.
 
-#+BEGIN_SRC scheme :export both :session compound-procedures
+#+BEGIN_SRC scheme :exports both :session compound-procedures
 (define (sum-of-squares x y)
 (+ (square x) (square y)))
 
