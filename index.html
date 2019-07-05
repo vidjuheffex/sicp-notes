@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-07-05 Fri 11:00 -->
+<!-- 2019-07-05 Fri 14:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SICP-Notes</title>
@@ -270,21 +270,21 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd268df3">1. Building Abstractions With Procedures</a>
+<li><a href="#org4d01c98">1. Building Abstractions With Procedures</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org0d25639">1.0.1. Why Lisp</a></li>
+<li><a href="#org74f864c">1.0.1. Why Lisp</a></li>
 </ul>
 </li>
-<li><a href="#org93e8e78">1.1. The Elements of Programming</a>
+<li><a href="#org977e7f8">1.1. The Elements of Programming</a>
 <ul>
-<li><a href="#orgc9b19cb">1.1.1. Expressions</a></li>
-<li><a href="#orgc397d99">1.1.2. Naming and Environment</a></li>
-<li><a href="#org7ce6a28">1.1.3. Evaluating Combinations</a></li>
-<li><a href="#org2708ef2">1.1.4. Compound Procedures</a></li>
-<li><a href="#orgdacb812">1.1.5. The Substitution Model for Procedure Application</a></li>
-<li><a href="#org9059319">1.1.6. Conditional Expressions and Predicates</a></li>
+<li><a href="#orgeafc26e">1.1.1. Expressions</a></li>
+<li><a href="#orgbbe9715">1.1.2. Naming and Environment</a></li>
+<li><a href="#orgc72dadb">1.1.3. Evaluating Combinations</a></li>
+<li><a href="#orgc3c2b0a">1.1.4. Compound Procedures</a></li>
+<li><a href="#org6ebf917">1.1.5. The Substitution Model for Procedure Application</a></li>
+<li><a href="#org80c19d1">1.1.6. Conditional Expressions and Predicates</a></li>
 </ul>
 </li>
 </ul>
@@ -294,16 +294,16 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgd268df3" class="outline-2">
-<h2 id="orgd268df3"><span class="section-number-2">1</span> Building Abstractions With Procedures</h2>
+<div id="outline-container-org4d01c98" class="outline-2">
+<h2 id="org4d01c98"><span class="section-number-2">1</span> Building Abstractions With Procedures</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 A computational process, in a correctly working computer, executes programs precisely and accurately. 
 </p>
 </div>
 
-<div id="outline-container-org0d25639" class="outline-4">
-<h4 id="org0d25639"><span class="section-number-4">1.0.1</span> Why Lisp</h4>
+<div id="outline-container-org74f864c" class="outline-4">
+<h4 id="org74f864c"><span class="section-number-4">1.0.1</span> Why Lisp</h4>
 <div class="outline-text-4" id="text-1-0-1">
 <ul class="org-ul">
 <li>Lisp descriptions of processes, called procedures, can themselves be represented and manipulated as Lisp data.</li>
@@ -313,8 +313,8 @@ A computational process, in a correctly working computer, executes programs prec
 </div>
 </div>
 
-<div id="outline-container-org93e8e78" class="outline-3">
-<h3 id="org93e8e78"><span class="section-number-3">1.1</span> The Elements of Programming</h3>
+<div id="outline-container-org977e7f8" class="outline-3">
+<h3 id="org977e7f8"><span class="section-number-3">1.1</span> The Elements of Programming</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The language serves as a framework within which we organize our ideas about processes. Languages have three mechanisms by which they express this:
@@ -334,8 +334,8 @@ In programming, we deal with two kinds of elements: procedures and data.
 </ul>
 </div>
 
-<div id="outline-container-orgc9b19cb" class="outline-4">
-<h4 id="orgc9b19cb"><span class="section-number-4">1.1.1</span> Expressions</h4>
+<div id="outline-container-orgeafc26e" class="outline-4">
+<h4 id="orgeafc26e"><span class="section-number-4">1.1.1</span> Expressions</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li>Expressions can be as simple as a number.</li>
@@ -377,8 +377,8 @@ In programming, we deal with two kinds of elements: procedures and data.
 </div>
 </div>
 
-<div id="outline-container-orgc397d99" class="outline-4">
-<h4 id="orgc397d99"><span class="section-number-4">1.1.2</span> Naming and Environment</h4>
+<div id="outline-container-orgbbe9715" class="outline-4">
+<h4 id="orgbbe9715"><span class="section-number-4">1.1.2</span> Naming and Environment</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 Define is our language’s simplest means of abstraction, for it allows us to use simple names to refer to the results of compound operations.
@@ -390,8 +390,8 @@ It should be clear that the possibility of associating values with symbols and l
 </div>
 </div>
 
-<div id="outline-container-org7ce6a28" class="outline-4">
-<h4 id="org7ce6a28"><span class="section-number-4">1.1.3</span> Evaluating Combinations</h4>
+<div id="outline-container-orgc72dadb" class="outline-4">
+<h4 id="orgc72dadb"><span class="section-number-4">1.1.3</span> Evaluating Combinations</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 To evaluate a combination, do the following:
@@ -448,8 +448,8 @@ The evaluation rule for expressions can be described by a simple general rule to
 </div>
 </div>
 
-<div id="outline-container-org2708ef2" class="outline-4">
-<h4 id="org2708ef2"><span class="section-number-4">1.1.4</span> Compound Procedures</h4>
+<div id="outline-container-orgc3c2b0a" class="outline-4">
+<h4 id="orgc3c2b0a"><span class="section-number-4">1.1.4</span> Compound Procedures</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <p>
 <b>Procedure</b> definitions are  a much more powerful abstraction technique by which a compound operation can be given a name and then referred to as a unit. 
@@ -518,12 +518,12 @@ Compound procedures are used in exactly the same way as primitive procedures. In
 </div>
 </div>
 
-<div id="outline-container-orgdacb812" class="outline-4">
-<h4 id="orgdacb812"><span class="section-number-4">1.1.5</span> The Substitution Model for Procedure Application</h4>
+<div id="outline-container-org6ebf917" class="outline-4">
+<h4 id="org6ebf917"><span class="section-number-4">1.1.5</span> The Substitution Model for Procedure Application</h4>
 <div class="outline-text-4" id="text-1-1-5">
 </div>
 <ol class="org-ol">
-<li><a id="orgaaa4bef"></a>Applicative Order Evaluation<br />
+<li><a id="org6be7c97"></a>Applicative Order Evaluation<br />
 <div class="outline-text-5" id="text-1-1-5-1">
 <p>
 To apply a compound procedure to arguments, evaluate the body of the procedure with each formal parameter replaced by the corresponding argument. 
@@ -587,7 +587,7 @@ and finally to:
 </div>
 </li>
 
-<li><a id="org9495044"></a>Normal Order Evaluation<br />
+<li><a id="org61fca61"></a>Normal Order Evaluation<br />
 <div class="outline-text-5" id="text-1-1-5-2">
 <p>
 This is not the only way to perform evaluation. An alternative evaluation model would not evaluate the operands until their values were needed. Instead it would first substitute operand expressions for parameters until it obtained an expression involving only primitive operators, and would then perform the evaluation. 
@@ -618,11 +618,14 @@ Then it's followed by reductions
 </p>
 
 <p>
-<b>**</b>
+<code>136</code>
 </p>
+</div>
+</li>
 
+<li><a id="org87ebfa6"></a>Applicative order versus normal order<br />
+<div class="outline-text-5" id="text-1-1-5-3">
 <p>
-<code>136</code> Applicative order versus normal order
 It can be shown that, for procedure applications that can be modeled using substitution (including all the procedures in the first two chapters of this book) and that yield legitimate values, normal-order and applicative-order evaluation produce the same value.
 </p>
 
@@ -634,15 +637,15 @@ Lisp uses applicative order, note having to evaluate the same expression twice i
 </ol>
 </div>
 
-<div id="outline-container-org9059319" class="outline-4">
-<h4 id="org9059319"><span class="section-number-4">1.1.6</span> Conditional Expressions and Predicates</h4>
+<div id="outline-container-org80c19d1" class="outline-4">
+<h4 id="org80c19d1"><span class="section-number-4">1.1.6</span> Conditional Expressions and Predicates</h4>
 <div class="outline-text-4" id="text-1-1-6">
 <p>
-\(|x| = \begin{cases}
+\[|x| = \begin{cases}
 x & if & x > 0 \\
 0 & if & x = 0 \\
 -x & if & x < 0
-\end{cases}\)
+\end{cases}\]
 </p>
 
 <p>
@@ -657,14 +660,312 @@ This construct is called a case analysis, and there is a special form in Lisp fo
 (abs 3)
 </pre>
 </div>
+
+<p>
+Conditional expressions are evaluated as follows. The predicate ⟨ p 1 ⟩ is evaluated first. If its value is false, then ⟨ p 2 ⟩ is evaluated. If ⟨ p 2 ⟩ ’s value is also false, then ⟨ p 3 ⟩ is evaluated. This process continues until a predicate is found whose value is true, in which case the interpreter returns the value of the corresponding consequent expression ⟨ e ⟩ of the clause as the value of the conditional expression. If none of the ⟨ p ⟩ ’s is found to be true, the value of the cond is undefined.
+</p>
+
+<p>
+<b>Predicates</b> are procedures that return true or false.
+</p>
+
+<p>
+Another way to define absolute-value:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">abs</span> x)
+  (<span style="color: #7aa5ff; font-weight: bold;">cond</span> ((&lt; x 0) (- x))
+        (<span style="color: #7aa5ff; font-weight: bold;">else</span> x))
+</pre>
 </div>
+
+<p>
+And one more:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">abs</span> x)
+  (<span style="color: #7aa5ff; font-weight: bold;">if</span> (&lt; x 0)
+      (- x)
+      x))
+</pre>
+</div>
+
+<p>
+If is a restricted type of conditional that can be used when there are precisely two cases in the case analysis.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org029bee1"></a>Exercise: 1.1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="exercise">exercise</span></span><br />
+<div class="outline-text-5" id="text-1-1-6-1">
+<div class="org-src-container">
+<pre class="src src-scheme">10
+</pre>
+</div>
+
+<pre class="example">
+10
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(+ 5 3 4)
+</pre>
+</div>
+
+<pre class="example">
+12
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(- 9 1)
+</pre>
+</div>
+
+<pre class="example">
+8
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(/ 6 2)
+</pre>
+</div>
+
+<pre class="example">
+3
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(+ (* 2 4) (- 4 6))
+</pre>
+</div>
+
+<pre class="example">
+6
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">define</span> <span style="color: #2de0a7; font-weight: bold;">a</span> 3)
+</pre>
+</div>
+
+<pre class="example">
+#&lt;undef&gt;
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">define</span> <span style="color: #2de0a7; font-weight: bold;">b</span> (+ a 1))
+</pre>
+</div>
+
+<pre class="example">
+#&lt;undef&gt;
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(+ a b (* a b))
+</pre>
+</div>
+
+<pre class="example">
+19
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(= a b)
+</pre>
+</div>
+
+<pre class="example">
+#f
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">if</span> (<span style="color: #7aa5ff; font-weight: bold;">and</span> (&gt; b a) (&lt; b (* a b)))
+    b
+    a)
+</pre>
+</div>
+
+<pre class="example">
+4
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">cond</span> ((= a 4) 6)
+      ((= b 4) (+ 6 7 a))
+      (<span style="color: #7aa5ff; font-weight: bold;">else</span> 25))
+</pre>
+</div>
+
+<pre class="example">
+16
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(+ 2 (<span style="color: #7aa5ff; font-weight: bold;">if</span> (&gt; b a) b a))
+</pre>
+</div>
+
+<pre class="example">
+6
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme">(* (<span style="color: #7aa5ff; font-weight: bold;">cond</span> ((&gt; a b) a)
+         ((&lt; a b) b)
+         (<span style="color: #7aa5ff; font-weight: bold;">else</span> -1))
+   (+ a 1))
+</pre>
+</div>
+
+<pre class="example">
+16
+</pre>
+</div>
+</li>
+
+<li><a id="orgbbfb43a"></a>Exercise 1.2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="exercise">exercise</span></span><br />
+<div class="outline-text-5" id="text-1-1-6-2">
+<p>
+Translate the following expression into prefix form:
+</p>
+
+<p>
+\[5 + 4 + ( 2 − ( 3 − ( 6 + \frac{4}{5}) \over 3 ( 6 − 2 ) ( 2 − 7 )\]
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5)))))
+   (* 3 (- 6 2) (- 2 7)))
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgeec2770"></a>Exercise 1.3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="exercise">exercise</span></span><br />
+<div class="outline-text-5" id="text-1-1-6-3">
+<p>
+Define a procedure that takes three numbers as arguments and returns the sum of the squares of the two larger numbers.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #666699;">;; </span><span style="color: #666699;">we'll redefine our above functions in this code session</span>
+(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">square</span> x) (* x x))
+
+(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">sum-of-squares</span> x y) (+ (square x) (square y)))
+
+(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">sum-of-squares-of-largest</span> x y z)
+  (<span style="color: #7aa5ff; font-weight: bold;">cond</span> ((<span style="color: #7aa5ff; font-weight: bold;">and</span> (&lt; x y) (&lt; x z)) (sum-of-squares y z))
+        ((<span style="color: #7aa5ff; font-weight: bold;">and</span> (&lt; y z) (&lt; y z)) (sum-of-squares x z))
+        ((<span style="color: #7aa5ff; font-weight: bold;">and</span> (&lt; z y) (&lt; z x)) (sum-of-squares x y))))
+</pre>
+</div>
+
+<p>
+Let's try the function
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(= 13 (sum-of-squares-of-largest 1 2 3))
+</pre>
+</div>
+
+<pre class="example">
+#t
+</pre>
+</div>
+</li>
+
+<li><a id="org19d664d"></a>Exercise 1.4&#xa0;&#xa0;&#xa0;<span class="tag"><span class="exercise">exercise</span></span><br />
+<div class="outline-text-5" id="text-1-1-6-4">
+<p>
+Observe that our model of evaluation allows for combinations whose operators are compound expressions. Use this observation to describe the behavior of the following procedure: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">a-plus-abs-b</span> a b)
+((<span style="color: #7aa5ff; font-weight: bold;">if</span> (&gt; b 0) + -) a b))
+</pre>
+</div>
+
+<p>
+Here either a plus operation or a minus opertaion is returned depeneding on the positive-ness or negative-ness of <code>b</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org1f89fc9"></a>Exercise 1.5&#xa0;&#xa0;&#xa0;<span class="tag"><span class="exercise">exercise</span></span><br />
+<div class="outline-text-5" id="text-1-1-6-5">
+<p>
+Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is using applicative-order evaluation or normal-order evaluation. He defines the following two procedures:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">p</span>) (p))
+
+(<span style="color: #7aa5ff; font-weight: bold;">define</span> (<span style="color: #2de0a7; font-weight: bold;">test</span> x y) 
+  (<span style="color: #7aa5ff; font-weight: bold;">if</span> (= x 0) 
+      0 
+      y))
+</pre>
+</div>
+
+<p>
+Here either a plus operation or a minus opertaion is returned depeneding on the positive-ness or negative-ness of <code>b</code>.
+</p>
+
+<p>
+Then he evaluates the expression
+</p>
+<div class="org-src-container">
+<pre class="src src-scheme">(test 0 (p))
+</pre>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org6a1c26f"></a>Applicative-Order<br />
+<div class="outline-text-6" id="text-1-1-6-5-1">
+<p>
+<code>(test 0 (p))</code><br />
+<code>(test 0 (p))</code><br />
+</p>
+</div>
+</li>
+<li><a id="orgc1449a4"></a>Normal Order<br />
+<div class="outline-text-6" id="text-1-1-6-5-2">
+<p>
+<code>(test 0 (p))</code><br />
+<code>((if (= 0 0) 0 (p))</code><br />
+<code>(if #t 0 (p))</code><br />
+<code>0</code>
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Julian Herrera</p>
-<p class="date">Created: 2019-07-05 Fri 11:00</p>
+<p class="date">Created: 2019-07-05 Fri 14:40</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

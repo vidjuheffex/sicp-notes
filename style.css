@@ -7,3 +7,11 @@ body {
 img {
     max-width: 100%;
 }
+
+pre.example {
+    background: lightgreen;
+}
+
+pre.example::before {
+    content: '> '
+}
